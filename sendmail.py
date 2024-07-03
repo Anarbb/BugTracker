@@ -36,7 +36,7 @@ class ReporterSendMail:
 
 
 class AdminSendMail:
-    def __init__(self, recipient_email, system, severity, steps, message):
+    def __init__(self, system, severity, steps, message):
         # Email and password for your SMTP server
         email = app.config['SMTP_EMAIL']
         password = app.config['SMTP_PASSWORD']
